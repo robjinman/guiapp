@@ -4,7 +4,7 @@ project(guiapp)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(wxwidgets CONFIG REQUIRED)
+find_package(wxWidgets CONFIG REQUIRED)
 
 add_executable(guiapp src/main.cpp)
 set_property(TARGET guiapp PROPERTY CXX_STANDARD 17)
