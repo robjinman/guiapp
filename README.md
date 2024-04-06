@@ -17,7 +17,7 @@ OSX
 From the project root, run
 
 ```
-    cmake --preset=osx
+    cmake --preset=nix
     cmake --build build
 ```
 
