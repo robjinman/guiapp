@@ -43,7 +43,25 @@ You might need to install pkg-config
 From the project root, run
 
 ```
-    cmake --preset=nix
+    cmake --preset=win
+    cmake --build build
+```
+
+Windows
+-------
+
+### Prerequisites
+
+* Visual Studio 2022
+* cmake
+* vcpkg
+
+### Build
+
+From the project root, run
+
+```
+    cmake --preset=win
     cmake --build build
 ```
 

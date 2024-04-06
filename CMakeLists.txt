@@ -10,3 +10,7 @@ add_executable(guiapp src/main.cpp)
 set_property(TARGET guiapp PROPERTY CXX_STANDARD 17)
 
 target_link_libraries(guiapp PRIVATE wx::base wx::core)
+
+if (MSVC)
+  target_link_options(guiapp PRIVATE /SUBSYSTEM:WINDOWS /ENTRY:WinMainCRTStartup)
+endif()
